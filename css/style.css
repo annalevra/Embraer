@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald&display=swap');
+
+/* Reset básico e padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Fonte principal do corpo do site */
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Container centralizado para o conteúdo */
+.container {
+  max-width: 1200px; /* Largura máxima */
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #003366; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  font-family: 'Oswald', sans-serif; /* Fonte do cabeçalho */
+  font-weight: bold; 
+  flex-direction: column; /* Alinha itens em coluna (vertical) */
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  padding: 15px 30px; /* Espaçamento interno */
+}
+
+.menu-wrapper {
+  display: flex; /* Define flexbox */
+  justify-content: space-between; /* Espaço entre itens */
+  align-items: center; /* Centraliza verticalmente */
+  flex-wrap: wrap; /* Quebra de linha quando necessario */
+  margin: 10px 0 25px; /* Margem superior e inferior */
+}
+
+.logo {
+  max-width: 200px; /* Largura máxima do logo*/
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: end; /* Alinha à direita */
+}
+
+.social-icons a {
+  color: #fff; /* Cor do texto */
+  margin-left: 15px; /* Espaçamento entre ícones */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold; /* Negrito */
+}
+
+nav ul {
+  list-style: none; /* Remove marcadores */
+  padding: 0;
+  display: flex;
+  gap: 10px; /* Espaçamento entre itens */
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px; /* Margem horizontal*/
+}
+
+nav li:last-child {
+  margin-right: 0; /* Remove margem direita do último item */
+}
+
+nav a {
+  color: #fff; /* Cor do texto */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 1.1em; /* Tamanho da fonte */
+}
+
+nav a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+  text-underline-offset: 4px; /* Distância do sublinhado */
+}
+
+/* Layout principal */
+main {
+  display: flex; 
+  flex-wrap: wrap; /* Permite quebra de linha */
+  gap: 0; /* Remove espaçamento */
+  background-color: #ffffff; /* Cor de fundo */
+}
+
+section#servicos {
+  flex: 2; /* 2 partes do espaço disponível */
+}
+
+.servico {
+  display: flex;
+  flex-direction: column; /* Alinha itens em coluna */
+  margin-top: 30px; /* Margem superior */
+}
+
+.faixa-diferenciais {
+  background-color: #e6ecf0; /* Cor de fundo */
+  padding: 50px 20px; /* Espaçamento interno */
+  border-top: 2px solid #ccc; /* Borda superior */
+  border-bottom: 2px solid #ccc; /* Borda inferior */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombra */
+  width: 100%; /* Largura total */
+}
+
+/* Flex container para imagem + texto */
+.conteudo-diferenciais {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  gap: 60px; /* Espaçamento entre itens */
+  max-width: 1200px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 20px; /* Espaçamento interno */
+  flex-wrap: wrap; /* Permite quebra de linha */
+}
+
+/* Imagem maior e mais responsiva */
+.conteudo-diferenciais img {
+  width: 100%; /* Largura total */
+  max-width: 550px; /* Largura máxima */
+  height: auto; /* Altura proporcional */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+  flex: 1 1 40%; /* Flexibilidade */
+}
+
+.texto-diferenciais h2 {
+  font-family: 'Oswald', sans-serif; /* Fonte do titulo de Diferenciais */
+  font-size: 2em; /* Tamanho da fonte */
+  color: #003366; /* Cor do texto */
+  margin-bottom: 20px; /* Margem inferior */
+  text-align: left; /* Alinhamento à esquerda */
+}
+
+.texto-diferenciais ul {
+  list-style: disc; /* Lista em disco */
+  padding-left: 20px; /* Espaçamento à esquerda */
+  font-size: 1.1em; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+}
+.diferenciais-grid {
+  display: flex;
+  flex-direction: row; /* Mantém texto e imagens lado a lado (horizontal) */
+  align-items: flex-start; /* Alinha ao topo */
+  justify-content: flex-start; /* Alinha à esquerda */
+  gap: 60px; /* Espaçamento entre itens */
+  max-width: 1200px; /* Largura máxima */
+  margin: auto; /* Centraliza horizontalmente a margem*/
+  padding: 40px 20px; /* Espaçamento interno */
+  flex-wrap: wrap; /* Permite quebra de linha */
+}
+
+.texto-diferenciais {
+  flex: 1; /* Ocupa o mesmo espaço que outros elementos flexíveis */
+  min-width: 300px; /* Largura mínima */
+  max-width: 500px; /* Largura máxima */
+}
+
+.imagens-diferenciais {
+  flex: 1; /* Ocupa o mesmo espaço que outros elementos flexíveis */
+  display: flex; /* Define um container flexível */
+  flex-direction: row; /* Alinha os itens em linha */
+  gap: 20px; /* Espaçamento entre as imagens */
+  justify-content: center; /* Centraliza as imagens horizontalmente */
+}
+
+.imagens-diferenciais img {
+  width: 48%; /* Largura da imagem no container */
+  height: 250px; /* Altura da imagem */
+  object-fit: cover; /* Ajusta a imagem para cobrir o container sem distorção */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Adiciona sombra às imagens */
+}
+
+/* Formulário */
+#contato {
+  padding: 30px 20px;
+  background-color: #ddd; /* Cor de fundo */
+  width: 100%; /* Largura total */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px; /* Largura máxima */
+  margin: auto; /* Centraliza horizontalmente */
+}
+
+/*Borda do Formulario*/
+fieldset {
+  border: 2px solid #003366; /* Borda com cor e espessura */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #fff; /* Cor de fundo */
+}
+
+/*Titulo do formulario*/
+fieldset legend {
+  font-size: 1.5em; /* Tamanho da fonte */
+  color: #003366; /* Cor do texto */
+  font-weight: bold; /* Negrito */
+  padding: 0 10px; /* Espaçamento interno horizontal */
+}
+
+label {
+  margin: 15px 0 5px;
+  display: flex;
+}
+
+/*Estilo da entrada de informacoes*/
+input, textarea {
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda com cor e espessura */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 1em; /* Tamanho da fonte */
+  width: 100%; /* Largura total */
+}
+
+button {
+  margin-top: 15px; /* Margem superior */
+  padding: 12px; /* Espaçamento interno */
+  background-color: #003366; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  border: none; /* Remove a borda */
+  font-size: 1em; /* Tamanho da fonte */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+  background-color: #00509e; /* Cor de fundo ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+  background-color: #003366; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 15px; /* Espaçamento interno */
+  font-size: 0.9em; /* Tamanho da fonte */
+  margin-bottom: 0; /* Remove a margem inferior */
+}
+
+/* Mostrar imagem ao clicar no texto de forma animada */
+.servico img {
+  display: none; /* Oculta a imagem por padrão */
+  margin-top: 10px; /* Margem superior */
+  max-width: 100%; /* Largura máxima */
+  border-radius: 8px; /* Bordas arredondadas */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Transição suave para opacidade e transformação */
+}
+
+.mostrar-imagem.ativa + img {
+  display: block; /* Exibe a imagem */
+  opacity: 1; /* Define a opacidade */
+  transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+  cursor: pointer; /* Cursor de ponteiro */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .logo-social {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  main {
+    flex-direction: column; /* Alinha os itens em coluna (vertical)*/
+  }
+
+  nav ul {
+    flex-direction: column; /* Alinha os itens em coluna (vertical)*/
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0; /* Margem vertical */
+  }
+}
+

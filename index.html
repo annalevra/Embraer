@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMBRAER - Aviação de Excelência</title>
+  
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+  
+    <!-- Importação das fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald&display=swap" rel="stylesheet">
+  
+    <!-- Ícone da aba do navegador -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+<body>
+
+  <!-- Cabeçalho com logotipo e redes sociais -->
+  <header>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/company/embraer" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/embraer/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+    <div class="menu-wrapper">
+      <img src="images/embraer.png" alt="Logo da Embraer" class="logo">
+      <!-- Navegação principal -->
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <section class="container" id="servicos">
+      <h2>Nossos Serviços</h2>
+      <!-- Serviço 1 -->
+      <div class="servico">
+        <p class="mostrar-imagem" onclick="this.classList.toggle('ativa')">
+          <strong>Aeronaves Comerciais</strong><br>
+          Desenvolvimento e fabricação de aeronaves comerciais líderes no mercado global.
+        </p>
+        <img src="images/aeronave-comercial" alt="Aeronave Comercial">
+      </div>
+      <!-- Serviço 2 -->
+      <div class="servico" style="margin-top: 30px;">
+        <p class="mostrar-imagem" onclick="this.classList.toggle('ativa')">
+          <strong>Aeronaves de Defesa & Segurança</strong><br>
+          Portfólio completo de aeronaves de Defesa & Segurança.
+        </p>
+        <img src="images/defesa -embraer.png" alt="Aeronave de Defesa">
+      </div>
+       <!-- Serviço 3 -->
+       <div class="servico" style="margin-top: 30px;">
+        <p class="mostrar-imagem" onclick="this.classList.toggle('ativa')">
+          <strong>Aeronaves Executivas</strong><br>
+          Soluções de aviação executiva com alto padrão de luxo, segurança e inovação.
+        </p>
+        <img src="images/Embraer-executive.png" alt="Aeronave Executiva">
+      </div>
+    </section>
+
+    <section class="faixa-diferenciais" id="diferenciais">
+      <div class="diferenciais-grid">
+    
+         <!-- Imagens à esquerda -->
+         <div class="imagens-diferenciais">
+          <img src="images/50 anos" alt="Foto institucional 1">
+          <img src="images/emb 50" alt="Foto institucional 2">
+        </div>
+        
+        <!-- Texto à direita -->
+        <div class="texto-diferenciais">
+          <h2>Diferenciais da Embraer</h2>
+          <ul>
+            <li>Mais de 50 anos de inovação em aviação</li>
+            <li>Presença em mais de 100 países</li>
+            <li>Compromisso com sustentabilidade</li>
+            <li>Tecnologia de ponta</li>
+          </ul>
+        </div>
+    
+      </div>
+    </section>
+    
+    
+    <!-- Formulário de contato -->
+    <section id="contato">
+      <div class="container">
+        <form>
+          
+          <fieldset>
+            <legend>
+              Fale Conosco
+            </legend>
+      
+            <div>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+            
+            <div>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
+            </div>
+
+            <div>
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+</main>
+
+<!-- Rodapé da página -->
+<footer>
+  <p><strong>EMBRAER S/A</strong></p>
+  <p>Av. Brigadeiro Faria Lima, 2170 - São José dos Campos - SP</p>
+  <p>Telefone: (12) 3927-1000</p>
+  <p>&copy; 2025 EMBRAER. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
